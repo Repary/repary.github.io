@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repary | Servizi di riparazione vicino a te</title>
+  <meta name="description"
+    content="Trova professionisti locali di fiducia per idraulica, elettricità, imbiancatura e ogni esigenza di riparazione domestica. Oppure offri le tue competenze.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap nav__inner">
+      <a href="/it/" class="nav__logo">Repary</a>
+      <div class="nav__right">
+        <a href="/en/" class="nav__lang">EN</a>
+        <span class="nav__sep">/</span>
+        <a href="/it/" class="nav__lang nav__lang--active">IT</a>
+        <button class="theme-btn" id="theme-toggle" aria-label="Cambia tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__body">
+      <h1 class="hero__title">La tua casa merita le mani giuste.</h1>
+      <p class="hero__desc">Repary collega i proprietari di casa con professionisti locali qualificati. Trova un esperto
+        per ogni riparazione, o offri le tue competenze a chi ti è vicino.</p>
+      <div class="hero__ctas">
+        <a href="#proprietari" class="btn btn--fill">Cerco un professionista <span class="btn__arrow">&rarr;</span></a>
+        <a href="#professionisti" class="btn btn--outline">Offro il mio lavoro</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="come-funziona">
+    <div class="wrap">
+      <p class="section__label">Come funziona</p>
+      <h2 class="section__heading">Tre passaggi, nessuna complicazione.</h2>
+      <p class="section__sub">Nessuna quota d'iscrizione, nessuna commissione. Solo un collegamento diretto tra te e la
+        persona di cui hai bisogno.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3 class="step__title">Descrivi il problema</h3>
+          <p class="step__desc">Dicci cosa deve essere riparato e dove ti trovi.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3 class="step__title">Sfoglia i professionisti</h3>
+          <p class="step__desc">Consulta profili, recensioni e disponibilità dei lavoratori nella tua zona.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3 class="step__title">Contatta e accordati</h3>
+          <p class="step__desc">Scrivi direttamente, discuti il lavoro, concordate i termini. Fatto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="paths">
+        <div class="path" id="proprietari">
+          <span class="path__label">Per i proprietari</span>
+          <h2 class="path__title">Trova la persona giusta per il lavoro</h2>
+          <ul class="path__list">
+            <li>Cerca per categoria di servizio e zona</li>
+            <li>Leggi recensioni verificate di clienti reali</li>
+            <li>Contatta i professionisti direttamente, senza intermediari</li>
+            <li>Gratuito da usare, nessun costo nascosto</li>
+          </ul>
+        </div>
+        <div class="path path--accent" id="professionisti">
+          <span class="path__label">Per i professionisti</span>
+          <h2 class="path__title">Fatti trovare dai clienti nella tua zona</h2>
+          <ul class="path__list">
+            <li>Crea un profilo e inserisci le tue competenze</li>
+            <li>Imposta la tua zona di lavoro e disponibilità</li>
+            <li>Ricevi richieste di lavoro da clienti vicini</li>
+            <li>Costruisci la tua reputazione con le valutazioni</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="servizi">
+    <div class="wrap">
+      <p class="section__label">Servizi</p>
+      <h2 class="section__heading">Per cosa ti serve aiuto?</h2>
+      <p class="section__sub">Tutte le categorie più comuni di riparazione e manutenzione domestica, in un unico posto.
+      </p>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__left">
+        <span class="nav__logo">Repary</span>
+        <span class="footer__tagline">Servizi di riparazione, semplificati.</span>
+      </div>
+      <div class="footer__links">
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#proprietari">Per i proprietari</a>
+        <a href="#professionisti">Per i professionisti</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Repary. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
